@@ -8,8 +8,236 @@
 		<title>CSS-任务10：51包装</title>
 		<link rel="stylesheet" type="text/css" href="css/Task10.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $("#nav li").click(function(){
+			    $("#nav li").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+			  })
+			})
+		</script>
 	</head>
 	<body>
+		<header>
+			<div class="top1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="phone">客服热线：010-594-78634</p>
+							<div class="registration">注册</div>
+							<div class="login">登陆</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top2">
+				<div class="container">
+					<nav class="navbar navbar-default" role="navigation">
+						<div> 
+							<div class="navbar-header">
+								<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						        </button>
+						    </div>
+						    <div class="collapse navbar-collapse" id="nav">
+						        <ul class="nav navbar-nav">
+							        <li><a href="##"><div class="top3">&ensp;&ensp;首页&ensp;&ensp;</div></a></li>
+							        <li><a href="##"><div class="top3">在线定制</div></a></li>
+							        <li><a href="##"><div class="top3">&ensp;标准箱&ensp;</div></a></li>
+							        <li><a href="##"><div class="top3">品质保障</div></a></li>
+							    </ul>
+						    </div>
+					    </div>
+					</nav>
+				</div>
+			</div>
+			<div class="">
+				<div class="container">
+					<div class="top4">
+						<div>
+							<div class="line0"></div>
+							<div class="circle0">1</div>
+							<p class="step0">1.定制纸箱</p>
+						</div>
+						<div class="top5">
+							<div class="line" style="z-index: 3;"></div>
+							<div class="circle">2</div>
+							<p class="step">2.选择数量</p>
+						</div>
+						<div class="top5">
+							<div class="line" style="z-index: 2;"></div>
+							<div class="circle">3</div>
+							<p class="step">3.上传附件</p>
+						</div>
+						<div class="top5">
+							<div class="line" style="z-index: 1;"></div>
+							<div class="circle">4</div>
+							<p class="step">4.确认下单</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<div class="container">
+					<p class="please">&nbsp;&nbsp;请您按照以下步骤来定制您的纸箱</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container main1">
+				<div class="row row1">
+					<div class="img2"></div>
+					<p class="choose">选择箱型</p>
+				</div>
+				<div class="row row2">
+					<form class="layer1">						
+						<label for="box1" class="layer2">
+							<input type="radio" name="box" id="box1"/>
+							<div class="circle1"><div class="circle2"></div></div>
+							<p>对口箱</p>
+						</label>
+						<label for="box2" class="layer2">
+							<input type="radio" name="box" id="box2"/>
+							<div class="circle1"><div class="circle2"></div></div>
+							<p>飞机盒</p>
+						</label>
+						<label for="box3" class="layer2">
+							<input type="radio" name="box" id="box3"/>
+							<div class="circle1"><div class="circle2"></div></div>
+							<p>天地盖</p>
+						</label>
+					</form>
+					<select class="layer3">
+    					<option>查看详情</option>
+    					<option>内容1</option>
+    					<option>内容2</option>
+    					<option>内容3</option>
+    				</select>
+				</div>
+				<div class="row row1">
+					<div class="img3"></div>
+					<p class="size">确定尺寸</p>
+				</div>
+				<div class="row row3">
+					<div class="col-sm-2 col-xs-3">
+						<form class="layer4">						
+							<label for="box5" class="layer5">
+								<input type="radio" name="box4" id="box5"/>
+								<div class="circle4"><div class="circle5"></div></div>
+								<p>外径</p>
+							</label>
+							<label for="box6" class="layer11">
+								<input type="radio" name="box4" id="box6"/>
+								<div class="circle4"><div class="circle5"></div></div>
+								<p>内径</p>
+							</label>
+						</form>
+					</div>
+					<div class="col-sm-8 col-xs-5">
+						<div class="row layer9">
+							<div class="layer7">长&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+							<div class="layer7">宽&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+							<div class="layer7">高&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+						</div>
+						<div class="row layer10">
+							<div class="layer7">长&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+							<div class="layer7">宽&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+							<div class="layer7">高&nbsp;&nbsp;<input class="layer8"/>&nbsp;mm</div>
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-4">
+						<select class="layer6">
+	    					<option>查看详情</option>
+	    					<option>内容1</option>
+	    					<option>内容2</option>
+	    					<option>内容3</option>
+	    				</select>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="img4"></div>
+					<p class="size">选择材质</p>
+				</div>
+				<div class="row row4">
+					<form class="layer12">						
+						<label for="box10" class="layer13">
+							<input type="radio" name="box9" id="box10"/>
+							<div class="circle7"><div class="circle8"></div></div>
+							<p>三层A瓦优质</p>
+						</label>
+						<label for="box11" class="layer13">
+							<input type="radio" name="box9" id="box11"/>
+							<div class="circle7"><div class="circle8"></div></div>
+							<p>三层A瓦优质</p>
+						</label>
+						<label for="box12" class="layer13">
+							<input type="radio" name="box9" id="box12"/>
+							<div class="circle7"><div class="circle8"></div></div>
+							<p>三层A瓦优质</p>
+						</label>
+						<label for="box7" class="layer13">
+							<input type="radio" name="box9" id="box7"/>
+							<div class="circle7"><div class="circle8"></div></div>
+							<p>三层A瓦优质</p>
+						</label>
+						<label for="box8" class="layer13">
+							<input type="radio" name="box9" id="box8"/>
+							<div class="circle7"><div class="circle8"></div></div>
+							<p>三层A瓦优质</p>
+						</label>
+					</form>
+					<select class="layer14">
+    					<option>查看详情</option>
+    					<option>内容1</option>
+    					<option>内容2</option>
+    					<option>内容3</option>
+    				</select>
+				</div>
+				<div class="row">
+					<div class="next">
+						<div class="border">下一步</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="bottom1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4">
+							<p class="bottom2">51包装网— 纸箱包装首选服务平台</p>
+						</div>
+						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 bottom3">
+							<p class="bottom4">关于我们</p>
+							<p class="bottom4">配送流程</p>
+							<p class="bottom4">联系我们</p>
+							<p class="bottom4">下单指南</p>
+							<p class="bottom4">媒体介绍</p>
+						</div>
+						<div class="col-xs-12 col-md-4 col-lg-3 bottom5">
+							<div class="bottom6">
+								<p>TEL：400-0000-000</p>
+								<p>企业QQ：123456789</p>
+								<p>微信号：XXXXXXX</p>
+							</div>
+							<img src="img/wechat.png" class="img1"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom7">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="bottom8">北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;京icp备99999999-1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	</body>
